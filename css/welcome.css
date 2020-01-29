@@ -1,19 +1,32 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgb(61, 55, 55);
   background-image: url(../images/New-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 30em;
 }
 
 
 
+
+header {
+  display: grid;
+  grid-template-columns: 20em 20em 20em 20em;
+  grid-template-rows: 20em 20em 20em 20em;
+}
+
 ul {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
   display: flex;
   margin: 0;
-  width: 97vw;
+  margin-left: 12px;
+  width: 70vw;
+  border: solid 2px black;
+  border-radius: 10em 4em 10em 4em;
   background: rgb(0,255,196);
-  background: linear-gradient(90deg, rgb(219, 64, 16) 27%, rgb(7, 5, 22) 86%);
+  background: linear-gradient(90deg, rgba(219, 63, 16, 0.815) 27%, rgba(7, 5, 22, 0.815) 86%);
 }
 
 .title {
@@ -25,7 +38,6 @@ ul {
 }
 
 li {
-  
   font-size: large;
 }
 
@@ -48,18 +60,26 @@ ul li {
 
 
 h1 {
+  -webkit-text-stroke: rgb(160, 12, 12) .4px;
+  font-size: 3em;
   display: flex;
   justify-content: center;
+  z-index: -1;
   font-style: oblique;
-  border-bottom: 6px solid darkslateblue;
+  border-bottom: 6px solid rgb(18, 7, 87);
   border-radius: 90%;
-  color: papayawhip;
+  color: rgb(0, 0, 0);
 }
 
 
-p {
-  display: flex;
-  text-align: center;
-  font-size: larger;
-  color: papayawhip;
+
+h2 {
+  margin: auto;
+  background-color: red;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  max-width: 200px;
+  max-height: 50px;
+  padding: 2px;
 }
+
