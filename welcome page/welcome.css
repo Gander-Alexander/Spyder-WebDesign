@@ -94,6 +94,9 @@ a {
 
 
 
+
+
+
 .burger {
   display: none;
   cursor: pointer;
@@ -113,7 +116,6 @@ a {
 }
 
 
-
 @media screen and (max-width:768px) {
   body {
       overflow-x: hidden;
@@ -125,28 +127,36 @@ a {
     height: 70px;
   }
 
-
   .logo {
     font-size: 15px;
   }
 
 
+  .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: rgb(83, 78, 78);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      transform: translateX(100%);
+  }
 
+  .nav-links li {
+      opacity: 0;
+  }
 
+  .burger {
+      display: block;
+  }
 
+}
 
-  
-/*Hero Section--------------------------------------- */
-
-.herosection {
-  margin-top: 4em;
-  text-align: center;
-  font-size: 3em;
-
-  
-  border-bottom: solid 2px black;
-
-
+.nav-active {
+  transform: translateX(0%);
 }
 
 
@@ -155,13 +165,14 @@ a {
 
 
 
+/* Hero Section---------------------------------------- */
 
-
-
-
-
-
-
+.herosection {
+  border-bottom: solid 2px black;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 2em;
+}
 
 
 
