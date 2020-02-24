@@ -94,9 +94,6 @@ a {
 
 
 
-
-
-
 .burger {
   display: none;
   cursor: pointer;
@@ -116,6 +113,7 @@ a {
 }
 
 
+
 @media screen and (max-width:768px) {
   body {
       overflow-x: hidden;
@@ -133,36 +131,11 @@ a {
   }
 
 
-  .nav-links {
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: rgb(83, 78, 78);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 30%;
-      transform: translateX(100%);
-  }
-
-  .nav-links li {
-      opacity: 0;
-  }
-
-  .burger {
-      display: block;
-  }
-
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
 
 
 
 
+  
 /*Hero Section--------------------------------------- */
 
 .herosection {
