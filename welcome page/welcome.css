@@ -140,11 +140,21 @@ a {
     
   }
 
-  header ul li {
-    padding-left: 1rem;
-    padding-top: .7rem;
-    
-}
+
+  .serv {
+    border: solid black 2px;
+    border-radius: 1em;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .ab {
+    padding-top: 2em;
+  }
+  
+  .faq {
+    padding-top: 2em;
+  }
 
 .serv:hover{
   transform: translateY(0em);
