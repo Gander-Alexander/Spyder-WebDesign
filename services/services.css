@@ -67,6 +67,9 @@ a {
 
 
 .serv {
+  background-color: rgb(172, 73, 73);
+  width: 23%;
+  text-align: center;
   transition-duration: 0.2s;
 }
 

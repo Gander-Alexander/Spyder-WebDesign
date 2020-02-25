@@ -71,6 +71,9 @@ a {
 }
 
 .ab {
+  background-color: rgb(172, 73, 73);
+  width: 18%;
+  text-align: center;
   transition-duration: 0.4s;
 }
 

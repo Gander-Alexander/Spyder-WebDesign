@@ -75,6 +75,9 @@ a {
 }
 
 .faq {
+  background-color: rgb(172, 73, 73);
+  width: 13%;
+  text-align: center;
   transition-duration: 0.3s;
 }
 
