@@ -67,8 +67,9 @@ a {
 
 
 .serv {
-  background-color: rgb(172, 73, 73);
-  width: 23%;
+  border: solid black 2px;
+  border-radius: 1em;
+  width: 29%;
   text-align: center;
   transition-duration: 0.2s;
 }
@@ -147,14 +148,19 @@ a {
 
 
   .serv {
-    padding-bottom: 2em;
+    border: solid black 2px;
+    border-radius: 1em;
+    width: 100%;
+    text-align: justify;
   }
   
   .ab {
-    padding-bottom: 2em;
+    padding-top: 2em;
   }
   
-  
+  .faq {
+    padding-top: 2em;
+  }
 
 
 .serv:hover{

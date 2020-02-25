@@ -71,8 +71,9 @@ a {
 }
 
 .ab {
-  background-color: rgb(172, 73, 73);
-  width: 18%;
+  border: solid black 2px;
+  border-radius: 1em;
+  width: 23%;
   text-align: center;
   transition-duration: 0.4s;
 }
@@ -151,8 +152,16 @@ a {
   }
   
   .ab {
-    padding-bottom: 2em;
+    border: solid black 2px;
+    border-radius: 1em;
+    width: 100%;
+    text-align: justify;
   }
+  
+  .faq {
+    padding-top: 2em;
+  }
+
   
   
 
