@@ -242,20 +242,24 @@ a {
 
 /* Hero Section---------------------------------------- */
 
-.herosection {
+
+.heroSection {
   margin-top: 5em;
   margin-bottom: 10em;
   display: grid;
   grid-template-columns: 250px 250px 250px 250px 250px 250px;
-  grid-template-rows: 400px 400px 400px 400px;
+  grid-template-rows: 400px 400px 400px;
 }
 
-.startP {
-  grid-column: 3, 4;
-  grid-row: 3, 4;
-  font-size: 1.5em;
-  margin-top: 2em;
+.text {
+  font-size: 2em;
+  margin-left: 200px;
+  grid-column: 1 / 4;
+  align-self: center;
+  justify-self: center;
 }
+
+        
 
 
 
@@ -272,7 +276,7 @@ a {
 /* Footer-------------------------------------------- */
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100vw;
   display: grid;
@@ -281,6 +285,8 @@ footer {
   background-color: rgba(172, 23, 23, 0.747);
   height: 7em;
 }
+
+
 
 .Copyright {
   grid-column: 1 / 5;
