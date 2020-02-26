@@ -135,18 +135,15 @@ a {
     background-color: rgb(201, 93, 93);
     width: 30%;
     flex-direction: column;
-    transition: 0.3s;
-    text-align: start;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+    padding-bottom: 20em;
+    
     
   }
 
 
-  .serv {
-    border: solid black 2px;
-    border-radius: 1em;
-    width: 100%;
-    text-align: justify;
-  }
+ 
   
   .ab {
     padding-top: 2em;
@@ -190,10 +187,22 @@ a {
 
 }
 
+
+@media screen and (max-width: 500px) {
+.logo {
+  font-size: 16px;
+}
+}
+
+
 @media screen and (max-width: 400px) {
 
   a {
     margin-left: 3vw;
+  }
+
+  .logo {
+    font-size: 13px;
   }
 
 }

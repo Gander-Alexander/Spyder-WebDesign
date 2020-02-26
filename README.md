@@ -1,3 +1,3 @@
 # Spyder-WebDesign
 
-## This is merely a test website that is hosted on netlify
+## This is a portfolio website that is hosted on netlify and will be used to show off my skills. 
