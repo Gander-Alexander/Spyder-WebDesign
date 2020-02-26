@@ -7,4 +7,3 @@ burgerMenu.addEventListener('click', function(){
   burgerMenu.classList.toggle('toggle') 
 })
 console.log(navLinks)
-
