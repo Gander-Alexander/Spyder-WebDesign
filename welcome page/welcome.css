@@ -10,6 +10,9 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+
+
+/* Nav Bar---------------------------------------------- */
 nav {
   display: flex;
   justify-content: space-around;
@@ -90,14 +93,14 @@ a {
 .faq:hover {
   transform: rotate(12deg);
 }
+/* ----------------------------------------------------- */
 
 
 
 
 
 
-
-
+/* Media queries----------------------------------------*/
 
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -206,10 +209,11 @@ a {
   }
 
 }
+/* ----------------------------------------------------- */
 
 
 
-
+/* Hamburger Menu--------------------------------------- */
 .active {
   transform: translateX(-100%)
 }
@@ -225,16 +229,38 @@ a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
+/* ----------------------------------------------------- */
+
+
+
+
+
+
+
+
 
 
 /* Hero Section---------------------------------------- */
 
 .herosection {
-  border-bottom: solid 2px black;
-  text-align: center;
-  font-size: 60px;
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem;
+    grid-template-rows: 1rem 1rem 1rem;
+}
+
+.startP {
+  font-size: 1.5em;
   margin-top: 2em;
 }
+
+
+
+/* ----------------------------------------------------- */
+
+
+
+
+
 
 
 
@@ -259,3 +285,4 @@ footer {
   font-size: 12px;
   color: white;
 }
+/* ----------------------------------------------------- */
