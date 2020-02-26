@@ -243,12 +243,16 @@ a {
 /* Hero Section---------------------------------------- */
 
 .herosection {
-    display: grid;
-    grid-template-columns: 1rem 1rem 1rem;
-    grid-template-rows: 1rem 1rem 1rem;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 250px 250px;
+  grid-template-rows: 400px 400px 400px 400px;
 }
 
 .startP {
+  grid-column: 3, 4;
+  grid-row: 3, 4;
   font-size: 1.5em;
   margin-top: 2em;
 }
