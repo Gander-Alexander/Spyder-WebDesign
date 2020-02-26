@@ -286,7 +286,21 @@ footer {
   height: 7em;
 }
 
+.linkdn {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
 
+.fab {
+  transition: .2s ease-in-out;
+  color: black;
+  font-size: 1.5em;
+}
+
+.fab:hover {
+  color: white;
+  font-size: 1.8em;
+}
 
 .Copyright {
   grid-column: 1 / 5;
