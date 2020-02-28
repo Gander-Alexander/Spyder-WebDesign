@@ -258,6 +258,7 @@ a {
 
 main {
   display: flex;
+  overflow: hidden;
 }
 
 #word1 {
