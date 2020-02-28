@@ -263,35 +263,48 @@ main {
 #word1 {
  
   font-size: 5em;
-  animation: mainText 1.3s ease-out;
+  animation: mainText 1.3s ease;
   
 }
 
 @keyframes mainText {
-  from {
-    transform: translateY(-100vw);
+  0% {
+    transform: translateY(-100vh);
+  }
+  50% {
+    transform: translateY(10vh);
   }
 } 
 
 
 
 #ui {
-  animation: textAppear 3s ease-in;
+  animation: textAppear 2s ease;
   font-size: 3em;
 }
 
 #ui2 {
-  animation: textAppear 3s ease-in;
+  animation: textEnter 3s ease;
   
   font-size: 4em;
 }
 
 @keyframes textAppear {
-  from {
-    opacity: 0;
+  0% {
+    transform: translateY(-100vh);
+    transform: translateX(200vh);
   }
-  to {
-    opacity: 1;
+  50% {
+    transform: translateY(20vh);
+  }
+}
+
+@keyframes textEnter {
+  0% {
+    transform: translateX(100vh);
+  }
+  50% {
+    transform: translateX(-10vh);
   }
 }
 
