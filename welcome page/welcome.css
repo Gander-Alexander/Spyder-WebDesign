@@ -527,6 +527,7 @@ svg {
 @media screen and (max-width: 400px) {
     svg {
       position: relative;
+      left: 0;
     }
 }
 /* ----------------------------------------------------- */
