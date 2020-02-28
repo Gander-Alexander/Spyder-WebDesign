@@ -519,6 +519,7 @@ main {
     position: absolute;
     width: 100vw;
     padding-bottom: 20vh;
+    padding-left: 3vw;
   }
 }
 
