@@ -525,7 +525,7 @@ svg {
 }
 
 @media screen and (max-width: 400px) {
-    svg {
+    body {
       overflow-x: hidden;
     }
 }
