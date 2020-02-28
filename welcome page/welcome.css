@@ -487,47 +487,5 @@ svg {
 
 /* Media Queries for the svg */
 
-@media screen and (max-width: 1224px) {
-  svg {
-    position: absolute;
-    left: 20vw;  
-    z-index: -1;
-    width: 50em;  
-  }
-}
 
-@media screen and (max-width: 800px) {
-  svg {
-    position: absolute;
-    left: 20vw;  
-    z-index: -1;
-    width: 30em;  
-  }
-}
-
-@media screen and (max-width: 600px) {
-  svg {
-    position: absolute;
-    left: 5vw;  
-    z-index: -1;
-    width: 30em;  
-  }
-}
-
-@media screen and (max-width: 500px) {
-  svg {
-    position: absolute;
-    left: 5vw;  
-    top: .2vh;
-    z-index: -1;
-    width: 28em;  
-  }
-}
-
-@media screen and (max-width: 400px) {
-    svg {
-      position: relative;
-      left: 0;
-    }
-}
 /* ----------------------------------------------------- */
