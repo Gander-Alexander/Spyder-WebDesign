@@ -174,7 +174,7 @@ a {
   .hamburgerMenu {
     right: 0;
     padding: 1em;
-    position: fixed;
+    position: relative;
     opacity: 1;
     cursor: pointer;
     z-index: 1;
@@ -242,42 +242,135 @@ a {
 
 
 /* Hero Section---------------------------------------- */
-main {
+/* main {
   display: flex;
-  padding-left: 5vw;
+  justify-content: flex-end;
   font-size: 3em;
 }
 
+
+
+
+
+/* ----------------------------------------------------- */
+
+/* Second varient of hero section----------------------- */
+
+main {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 100px 100px 100px;
+}
+
 #word1 {
-  padding-top: 9vh;
+  grid-row: 1;
+  font-size: 5em;
   animation: mainText 1.3s ease-out;
-}
-
-#word2 {
-  padding-top: 12vh;
-  padding-left: 2vw;
-  animation: mainText 1.6s ease-out;
-}
-
-#word3 {
-  padding-top: 16vh;
-  padding-left: 2vw;
-  animation: mainText 1.9s ease-out;
+  text-align: end;
 }
 
 @keyframes mainText {
   from {
-    transform: translateX(100vw);
+    transform: translateY(-100vw);
   }
+} 
+
+.desg {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#ui {
+  animation: uiBulge 4s ease-out,
+  uiSwoopin 3s ease;
+  font-size: 3em;
+}
+
+#ui2 {
+  animation: uiBulge2 4.2s ease,
+  uiSwoopin2 3s ease-out;
+  font-size: 4em;
+}
+
+@keyframes uiBulge {
+  0%, 100% {
+    font-size: 3em,
+  }
+  50% {
+    font-size: 5em;
+  }
+}
+
+@keyframes uiSwoopin {
+  from {
+    transform: translateY(-100vw);
+  }
+}
+
+
+@keyframes uiBulge2 {
+  0%, 100% {
+    font-size: 4em;
+  }
+  50% {
+    font-size: 6em;
+  }
+}
+
+
+@keyframes uiSwoopin2 {
+  from {
+    transform: translateY(200vw);
+  }
+}
+
+
+
+/* Media Queries for the main name and title */
+
+@media screen and (max-width: 1224px) {
+  #word1 {
+    grid-column: 1 / 3;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .desg {
+      grid-row: 2;
+      font-size: .6em;
+    }
+
+    #word1 {
+      font-size: 3em;
+      text-align: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #word1 {
+      font-size: 2.5em;
+    }
 }
 /* ----------------------------------------------------- */
 
 
 
+
+
+
+
+
+
+
 /* SVG Hero Image--------------------------------------- */
 svg {
-  display: flex;
+  grid-column: 2;
 }
+
 
 #speech-bubble1 {
   animation: speech 1.8s ease;
@@ -315,7 +408,7 @@ svg {
 }
 
  #head {
-   animation: bob .9s infinite ease;
+   animation: bob .8s infinite;
    animation-delay: 3s;
  }
 
@@ -324,7 +417,7 @@ svg {
     transform: translateY(0vh);
   }
   30% {
-    transform: translateY(1vh);
+    transform: translateY(.6vh);
   }
   100% {
     transform: translateY(0vh);
@@ -332,7 +425,7 @@ svg {
 }
 
 #sun-gradient {
-  animation: sun 1s infinite ease;
+  animation: sun 1s infinite ease-in;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -372,7 +465,7 @@ svg {
     transform: rotateZ(0deg);
   }
   30% {
-    transform: rotateZ(2deg);
+    transform: rotateZ(3deg);
   }
   100% {
     transform: rotateZ(0deg);
@@ -392,44 +485,48 @@ svg {
 }
 
 
+/* Media Queries for the svg */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1224px) {
   svg {
-    margin-left: 0;
-    width: 60em;
-  }
-  
-}
-
-@media screen and (max-width: 750px) {
-  svg {
-    margin-right: 20%;
-    width: 30em;
+    position: absolute;
+    left: 20vw;  
+    z-index: -1;
+    width: 50em;  
   }
 }
 
+@media screen and (max-width: 800px) {
+  svg {
+    position: absolute;
+    left: 20vw;  
+    z-index: -1;
+    width: 30em;  
+  }
+}
 
 @media screen and (max-width: 600px) {
   svg {
-    margin-left: 0;
+    position: absolute;
+    left: 5vw;  
+    z-index: -1;
+    width: 30em;  
   }
 }
-
 
 @media screen and (max-width: 500px) {
   svg {
-    margin-left: 0;
-    width: 29em;
+    position: absolute;
+    left: 5vw;  
+    top: .2vh;
+    z-index: -1;
+    width: 28em;  
   }
 }
+
+@media screen and (max-width: 400px) {
+    svg {
+    display: none; 
+    }
+}
 /* ----------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
