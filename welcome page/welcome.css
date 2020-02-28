@@ -257,16 +257,14 @@ a {
 /* Second varient of hero section----------------------- */
 
 main {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 100px 100px 100px;
+  display: flex;
 }
 
 #word1 {
-  grid-row: 1;
+ 
   font-size: 5em;
   animation: mainText 1.3s ease-out;
-  text-align: end;
+  
 }
 
 @keyframes mainText {
@@ -275,84 +273,108 @@ main {
   }
 } 
 
-.desg {
-  grid-column: 1;
-  grid-row: 3;
-}
+
 
 #ui {
-  animation: uiBulge 4s ease-out,
-  uiSwoopin 3s ease;
+  animation: textAppear 3s ease-in;
   font-size: 3em;
 }
 
 #ui2 {
-  animation: uiBulge2 4.2s ease,
-  uiSwoopin2 3s ease-out;
+  animation: textAppear 3s ease-in;
+  
   font-size: 4em;
 }
 
-@keyframes uiBulge {
-  0%, 100% {
-    font-size: 3em,
-  }
-  50% {
-    font-size: 5em;
-  }
-}
-
-@keyframes uiSwoopin {
+@keyframes textAppear {
   from {
-    transform: translateY(-100vw);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
 
-@keyframes uiBulge2 {
-  0%, 100% {
-    font-size: 4em;
-  }
-  50% {
-    font-size: 6em;
-  }
-}
 
 
-@keyframes uiSwoopin2 {
-  from {
-    transform: translateY(200vw);
-  }
-}
+
 
 
 
 /* Media Queries for the main name and title */
 
-@media screen and (max-width: 1224px) {
+
+@media screen and (max-width: 1800px) {
   #word1 {
-    grid-column: 1 / 3;
-    text-align: left;
+    padding-right: 12vw;
+    font-size: 6vw;
   }
+
+    .desg {
+      padding-right: 2vw;
+      font-size: 1vw;
+    }
 }
 
+@media screen and (max-width: 1105px) {
+  #word1 {
+    padding-right: 12vw;
+    font-size: 5vw;
+  }
+
+    .desg {
+      padding-right: 4vw;
+      font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  #word1 {
+    padding-right: 12vw;
+    font-size: 6vw;
+  }
+
+    .desg {
+      padding-right: 2vw;
+      font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #word1 {
+    padding-right: 12vw;
+    font-size: 6vw;
+  }
+
+    .desg {
+      padding-right: 2vw;
+      font-size: 1vw;
+    }
+}
 
 @media screen and (max-width: 600px) {
 
 
     .desg {
-      grid-row: 2;
-      font-size: .6em;
+      margin-right: 20px;
+      font-size: 2vw;
     }
 
     #word1 {
-      font-size: 3em;
-      text-align: start;
+      margin-right: 40px;
+      font-size: 10vw;
+      
     }
 }
 
 @media screen and (max-width: 400px) {
     #word1 {
-      font-size: 2.5em;
+      font-size: 2em;
+    }
+
+    .desg {
+      padding-right: 2vw;
     }
 }
 /* ----------------------------------------------------- */
@@ -367,9 +389,7 @@ main {
 
 
 /* SVG Hero Image--------------------------------------- */
-svg {
-  grid-column: 2;
-}
+
 
 
 #speech-bubble1 {
@@ -487,5 +507,19 @@ svg {
 
 /* Media Queries for the svg */
 
+@media screen and (max-width: 600px) {
+  svg {
+    position: absolute;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  svg {
+    position: absolute;
+    width: 100vw;
+    padding-bottom: 20vh;
+  }
+}
 
 /* ----------------------------------------------------- */
