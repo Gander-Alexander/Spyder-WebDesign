@@ -264,7 +264,7 @@ main {
 #word1 {
  
   font-size: 5em;
-  animation: mainText 1.3s ease;
+  -webkit-animation: mainText 1.3s ease;
   
 }
 
@@ -280,12 +280,12 @@ main {
 
 
 #ui {
-  animation: textAppear 2s ease;
+  -webkit-animation: textAppear 2s ease;
   font-size: 3em;
 }
 
 #ui2 {
-  animation: textEnter 3s ease;
+  -webkit-animation: textEnter 3s ease;
   
   font-size: 4em;
 }
@@ -407,16 +407,16 @@ main {
 
 
 #speech-bubble1 {
-  animation: speech 1.8s ease;
+  -webkit-animation: speech 1.8s ease;
 }
 
 #speech-bubble2 {
-  animation: speech2 2.5s ease;
+  -webkit-animation: speech2 2.5s ease;
 }
 
 #speech-bubble3 {
   
-  animation: speech3 3s ease;
+  -webkit-animation: speech3 3s ease;
 }
 
 @keyframes speech {
@@ -442,8 +442,8 @@ main {
 }
 
  #head {
-   animation: bob .8s infinite;
-   animation-delay: 3s;
+   -webkit-animation: bob .8s infinite;
+   -webkit-animation-delay: 3s;
  }
 
 @keyframes bob {
@@ -459,7 +459,7 @@ main {
 }
 
 #sun-gradient {
-  animation: sun 1s infinite ease-in;
+  -webkit-animation: sun 1s infinite ease-in;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -474,22 +474,22 @@ main {
 }
 
 #front-left-leaf {
-  animation: leas 2s infinite ease;
+  -webkit-animation: leas 2s infinite ease;
   transform-box: fill-box;
 }
 
 #front-right-leaf {
-  animation: leas2 2s infinite ease-in;
+  -webkit-animation: leas2 2s infinite ease-in;
   transform-box: fill-box;
 }
 
 #back-right-leaf {
-  animation: leas2 2s infinite ease-out;
+  -webkit-animation: leas2 2s infinite ease-out;
   transform-box: fill-box;
 }
 
 #back-left-leaf {
-  animation: leas2 2s infinite ease-in;
+  -webkit--webkit-animation: leas2 2s infinite ease-in;
   transform-box: fill-box;
 }
 
