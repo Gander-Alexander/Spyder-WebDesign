@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
   background-color: rgb(228, 147, 147);
 }
@@ -170,7 +171,7 @@ button a{
 
 /* ----------Media Queries for the hero section */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .hero-text {
     font-size: x-large;
   }
