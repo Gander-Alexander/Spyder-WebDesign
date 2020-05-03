@@ -8,7 +8,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(228, 147, 147);
 }
 
 
@@ -19,7 +19,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(172, 23, 23, 0.747);
 }
 
 
@@ -30,20 +29,15 @@ nav {
   transition-duration: 0.6s;
 }
 
-.logoimg:hover {
-  cursor: pointer;
-  transform: translateY(3px);
-  width: 80px;
-  height: 80px;
-}
 
 
 .logo {
   display: flex;
   flex-direction: row;
-  color: rgb(228, 222, 222);
+  color: rgb(37, 32, 32);
   letter-spacing: 5px;
   font-size: 22px;
+  margin-top: 1em;
 }
 
 
@@ -60,39 +54,15 @@ nav {
 }
 
 a {
-  color: rgb(228, 222, 222);
+  color: rgb(49, 43, 43);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
 }
 
-
-
-
-.serv {
-  transition-duration: 0.2s;
-}
-
-.ab {
-  transition-duration: 0.4s;
-}
-
-.faq {
-  transition-duration: 0.3s;
-}
-
-
-.serv:hover{
-  transform: translateY(-0.3em);
-}
-
-.ab:hover {
-  transform: scale(1.5);
-}
-
-.faq:hover {
-  transform: rotate(12deg);
+a:hover {
+  color: white;
 }
 /* ----------------------------------------------------- */
 
@@ -101,7 +71,7 @@ a {
 
 
 
-/* Media queries----------------------------------------*/
+/* Media queries for nav bars------------------------*/
 
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -136,14 +106,13 @@ a {
     top: 0;
     left: 100%;
     height: 100vh;
-    background-color: rgb(201, 93, 93);
     width: 30%;
     flex-direction: column;
     transition: 0.3s ease-in-out;
     justify-content: center;
     padding-bottom: 20em;
-    
-    
+    background-color: rgba(177, 156, 156, 0.753);
+    z-index: 1;
   }
 
 
@@ -157,17 +126,6 @@ a {
     padding-top: 2em;
   }
 
-.serv:hover{
-  transform: translateY(0em);
-}
-
-.ab:hover {
-  transform: scale(1);
-}
-
-.faq:hover {
-  transform: rotate(0deg);
-}
 
 
 
@@ -177,7 +135,7 @@ a {
     position: relative;
     opacity: 1;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
 
 
@@ -185,7 +143,7 @@ a {
     width: 25px;
     height: 3px;
     margin-bottom: 7px;
-    background-color: #fff;
+    background-color: rgb(3, 3, 3);
     transition-duration: 0.4s
   }
 
@@ -236,307 +194,70 @@ a {
 
 
 
-
-
-
-
-
-/* Hero Section---------------------------------------- */
-/* main {
+/* ----------------------hero section------------------------------------------ */
+.hero-section {
+  margin-bottom: 10em;
   display: flex;
-  justify-content: flex-end;
-  font-size: 3em;
+  flex-direction: column;
+  position: relative;
+  left: 10vw;
 }
 
 
 
 
-
-/* ----------------------------------------------------- */
-
-/* Second varient of hero section----------------------- */
-
-main {
-  display: flex;
-  overflow: hidden;
-}
-
-#word1 {
- 
-  font-size: 5em;
-  -webkit-animation: mainText 1.3s ease;
-  
-}
-
-@keyframes mainText {
-  0% {
-    transform: translateY(-100vh);
-  }
-  50% {
-    transform: translateY(10vh);
-  }
-} 
-
-
-
-#ui {
-  -webkit-animation: textAppear 2s ease;
-  font-size: 3em;
-}
-
-#ui2 {
-  -webkit-animation: textEnter 3s ease;
-  
-  font-size: 4em;
-}
-
-@keyframes textAppear {
-  0% {
-    transform: translateY(-100vh);
-    transform: translateX(200vh);
-  }
-  50% {
-    transform: translateY(20vh);
-  }
-}
-
-@keyframes textEnter {
-  0% {
-    transform: translateX(100vh);
-  }
-  50% {
-    transform: translateX(-10vh);
-  }
+.hero-image {
+  margin-top: 2em;
+  background-color: rgb(31, 27, 5);   
+  height: 60vh;
+  width: 80vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px;
 }
 
 
-
-
-
-
-
-
-/* Media Queries for the main name and title */
-
-
-@media screen and (max-width: 1800px) {
-  #word1 {
-    padding-right: 12vw;
-    font-size: 6vw;
-  }
-
-    .desg {
-      padding-right: 2vw;
-      font-size: 1vw;
-    }
+.hero-text {
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 245, 245);
 }
 
-@media screen and (max-width: 1105px) {
-  #word1 {
-    padding-right: 12vw;
-    font-size: 5vw;
-  }
-
-    .desg {
-      padding-right: 4vw;
-      font-size: 2vw;
-    }
+.hero-text p {
+    font-size: .8em;
+    color: rgb(240, 222, 222);
 }
 
-@media screen and (max-width: 800px) {
-  #word1 {
-    padding-right: 12vw;
-    font-size: 6vw;
-  }
-
-    .desg {
-      padding-right: 2vw;
-      font-size: 1vw;
-    }
+button {
+  margin-top: 2em;
+  background-color: rgb(216, 124, 3);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: .5s ease;
+  -moz-transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
 }
 
-@media screen and (max-width: 768px) {
-  #word1 {
-    padding-right: 12vw;
-    font-size: 6vw;
-  }
-
-    .desg {
-      padding-right: 2vw;
-      font-size: 1vw;
-    }
+button:hover {
+  cursor: pointer;
+  background-color: rgb(218, 153, 34);
+  border-radius: 40px;
 }
 
-@media screen and (max-width: 600px) {
-
-
-    .desg {
-      margin-right: 20px;
-      font-size: 2vw;
-    }
-
-    #word1 {
-      margin-right: 40px;
-      font-size: 10vw;
-      
-    }
+button:focus {
+  background-color: rgb(185, 131, 29);
 }
 
-@media screen and (max-width: 400px) {
-    #word1 {
-      font-size: 11vw;
-    }
-
-    .desg {
-      padding-right: 3vw;
-    }
-}
-/* ----------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-/* SVG Hero Image--------------------------------------- */
-
-
-
-#speech-bubble1 {
-  -webkit-animation: speech 1.8s ease;
-}
-
-#speech-bubble2 {
-  -webkit-animation: speech2 2.5s ease;
-}
-
-#speech-bubble3 {
-  
-  -webkit-animation: speech3 3s ease;
-}
-
-@keyframes speech {
-  from {
-    transform: translateX(-100vw);
-  }
-}
-
-@keyframes speech2 {
-  from {
-    transform: translateX(200vw);
-  }
-}
-
-@keyframes speech3 {
-  from {
-    opacity: 0;
-    transform: translateX(-300vw);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
- #head {
-   -webkit-animation: bob .8s infinite;
-   -webkit-animation-delay: 3s;
- }
-
-@keyframes bob {
-  0% {
-    transform: translateY(0vh);
-  }
-  30% {
-    transform: translateY(.6vh);
-  }
-  100% {
-    transform: translateY(0vh);
-  }
-}
-
-#sun-gradient {
-  -webkit-animation: sun 1s infinite ease-in;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes sun {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
-#front-left-leaf {
-  -webkit-animation: leas 2s infinite ease;
-  transform-box: fill-box;
-}
-
-#front-right-leaf {
-  -webkit-animation: leas2 2s infinite ease-in;
-  transform-box: fill-box;
-}
-
-#back-right-leaf {
-  -webkit-animation: leas2 2s infinite ease-out;
-  transform-box: fill-box;
-}
-
-#back-left-leaf {
-  -webkit--webkit-animation: leas2 2s infinite ease-in;
-  transform-box: fill-box;
-}
-
-
-@keyframes leas {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  30% {
-    transform: rotateZ(3deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
-@keyframes leas2 {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  30% {
-    transform: rotateZ(-2deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
-
-/* Media Queries for the svg */
-
-@media screen and (max-width: 600px) {
-  svg {
-    position: absolute;
-    width: 90vw;
-    z-index: -1;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  svg {
-    position: absolute;
-    width: 100vw;
-    padding-bottom: 20vh;
-    padding-left: 3vw;
-    z-index: -1;
-  }
-}
-
-/* ----------------------------------------------------- */

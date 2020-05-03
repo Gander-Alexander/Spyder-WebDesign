@@ -6,16 +6,19 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(196, 173, 173);
 }
 
+
+
+/* Nav Bar---------------------------------------------- */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(172, 23, 23, 0.747);
 }
 
 
@@ -26,18 +29,12 @@ nav {
   transition-duration: 0.6s;
 }
 
-.logoimg:hover {
-  cursor: pointer;
-  transform: translateY(3px);
-  width: 80px;
-  height: 80px;
-}
 
 
 .logo {
   display: flex;
   flex-direction: row;
-  color: rgb(228, 222, 222);
+  color: rgb(37, 32, 32);
   letter-spacing: 5px;
   font-size: 22px;
 }
@@ -56,52 +53,24 @@ nav {
 }
 
 a {
-  color: rgb(228, 222, 222);
+  color: rgb(49, 43, 43);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
 }
 
-
-
-
-.serv {
-  transition-duration: 0.2s;
+a:hover {
+  color: white;
 }
-
-.ab {
-  border: solid black 2px;
-  border-radius: 1em;
-  width: 23%;
-  text-align: center;
-  transition-duration: 0.4s;
-}
-
-.faq {
-  transition-duration: 0.3s;
-}
-
-
-.serv:hover{
-  transform: translateY(-0.3em);
-}
-
-.ab:hover {
-  transform: scale(1.5);
-}
-
-.faq:hover {
-  transform: rotate(12deg);
-}
+/* ----------------------------------------------------- */
 
 
 
 
 
 
-
-
+/* Media queries for nav bars------------------------*/
 
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -136,54 +105,31 @@ a {
     top: 0;
     left: 100%;
     height: 100vh;
-    background-color: rgb(201, 93, 93);
     width: 30%;
     flex-direction: column;
     transition: 0.3s ease-in-out;
     justify-content: center;
     padding-bottom: 20em;
+    background-color: rgba(177, 156, 156, 0.753);
+    
   }
 
 
-
-
-  .serv {
-    padding-bottom: 2em;
-  }
+ 
   
   .ab {
-    border: solid black 2px;
-    border-radius: 1em;
-    width: 100%;
-    text-align: justify;
+    padding-top: 2em;
   }
   
   .faq {
     padding-top: 2em;
   }
 
-  
-  
-
-
-.serv:hover{
-  transform: translateY(0em);
-}
-
-.ab:hover {
-  transform: scale(1);
-}
-
-.faq:hover {
-  transform: rotate(0deg);
-}
-
-
 
   .hamburgerMenu {
     right: 0;
     padding: 1em;
-    position: fixed;
+    position: relative;
     opacity: 1;
     cursor: pointer;
     z-index: 1;
@@ -194,7 +140,7 @@ a {
     width: 25px;
     height: 3px;
     margin-bottom: 7px;
-    background-color: #fff;
+    background-color: rgb(3, 3, 3);
     transition-duration: 0.4s
   }
 
@@ -202,27 +148,28 @@ a {
 
 
 @media screen and (max-width: 500px) {
+.logo {
+  font-size: 16px;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+
+  a {
+    margin-left: 3vw;
+  }
+
   .logo {
-    font-size: 16px;
-  }
-  }
-  
-  
-  @media screen and (max-width: 400px) {
-  
-    a {
-      margin-left: 3vw;
-    }
-  
-    .logo {
-      font-size: 13px;
-    }
-  
+    font-size: 13px;
   }
 
+}
+/* ----------------------------------------------------- */
 
 
 
+/* Hamburger Menu--------------------------------------- */
 .active {
   transform: translateX(-100%)
 }
@@ -238,6 +185,9 @@ a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
+/* ----------------------------------------------------- */
+
+
 
 /* Main Content----------------------------------------- */
 main {
@@ -250,69 +200,15 @@ svg {
 }
 
 
-#orange-paper {
-  -webkit-animation: page-pop 1.1s ease;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#brown-paper {
-  -webkit-animation: page-pop 1s ease-in;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#svg-github {
-  -webkit-animation: page-pop 1.4s ease-out;
-  transform-origin: center;
-  transform-box: fill-box;
-  transition: .2s;
-}
-
-#svg-github:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-}
-
-#svg-linkedin {
-  -webkit-animation: page-pop 1.1s ease-out;
-  transform-origin: center;
-  transform-box: fill-box;
-  transition: .3s;
-}
-
-#svg-linkedin:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-}
-
-#pink-paper {
-  -webkit-animation: page-pop 1.2s ease-out;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-/* keyframes for the svg image--------------------------*/
-@keyframes page-pop {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 /* Media queries for the svg---------------------------- */
 
-@media screen and (max-width: 1200px) {
 
-}
 
 @media screen and (max-width: 1000px) {
- 
+ svg {
+   width: 90vw;
+   margin-left: 3vw;
+ }
 }
 
 
