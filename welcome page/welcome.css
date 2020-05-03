@@ -83,6 +83,14 @@ nav a:hover {
     margin-right: 2em;
   }
 
+  nav {
+    justify-content: start;
+  }
+
+  .logo {
+    margin-right: 2em;
+  }
+
 }
 
 
