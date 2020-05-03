@@ -100,6 +100,8 @@ nav a:hover {
   margin-bottom: 10em;
   display: flex;
   flex-direction: column;
+  position: relative;
+  left: 10vw;
 }
 
 
@@ -109,11 +111,12 @@ nav a:hover {
   margin-top: 2em;
   background-color: rgb(31, 27, 5);   
   height: 60vh;
-  width: 100vw;
+  width: 80vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 30px;
 }
 
 
@@ -174,6 +177,16 @@ button a{
 
   button {
     font-size: small;
+  }
+
+  .hero-section {
+    position: unset;
+    left: 0vw;
+  }
+
+  .hero-image {
+    width: 100vw;
+    border-radius: 0px;
   }
 }
 
