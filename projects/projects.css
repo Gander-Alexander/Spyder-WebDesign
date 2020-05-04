@@ -150,13 +150,13 @@ img {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 1em;
   position: absolute;
-  top: 10%;
+  top: 14%;
   left: 54%;
   width: 300px;
   margin-left: 1em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   transform: translate(-90%, 30%);
   -ms-transform: translate(-90%, 30%);
   -webkit-transform: translate(-90%, 30%);
@@ -231,10 +231,23 @@ button:hover {
 
 @media screen and (max-width: 750px) {
   .card {
-    width: 400px;
-    margin-left: 7em;
+    width: 600px;
+    margin-left: 3em;
   }
   }
+
+@media screen and (max-width: 525px) {
+  .card {
+    width: 525px;
+    margin: 0;
+    margin-top: 4em;
+  }
+  .text {
+    font-size: 1em;
+    top: 20%;
+    left: 65%;
+  }
+}
 
 /* Footer-------------------------------------------- */
 
