@@ -191,7 +191,7 @@ button:hover {
 
 .card:hover {
   box-shadow: 5px 5px 20px;
-  transform: translateY(-.5em);
+  transform: translateY(0em);
 }
 
 @media screen and (max-width: 1400px) {

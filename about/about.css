@@ -45,6 +45,7 @@ nav {
 
 .logo:hover {
   color: chocolate;
+  background-color: antiquewhite;
 }
 
 
@@ -58,16 +59,25 @@ nav {
   list-style: none;
 }
 
-nav a {
-  color: rgb(49, 43, 43);
+a {
   text-decoration: none;
+}
+
+.nav-links a {
+  color: rgb(49, 43, 43);
+  
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+  padding: .5em;
 }
 
-nav a:hover {
-  color: white;
+.nav-links a:hover {
+  color: chocolate;
+  background-color: aliceblue;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 20px 0px 20px 0px;
 }
 /* ----------------------------------------------------- */
 
@@ -93,36 +103,42 @@ nav a:hover {
   }
 
 }
+/* -------------------------------------------------------------------------------------- */
 
 
-/* Main Content----------------------------------------- */
-main {
-    display: flex; 
+/* Style for the main content------------------------------------------------------------- */
+
+.content {
+  margin-top: 2em;
+  margin-left: 20vw;
+  margin-right: 20em;
 }
 
-svg {
-  margin-top: 20px;
-  width: 45vw;
+h2 {
+  margin-bottom: 1em;
+  text-align: center;
 }
 
-
-/* Media queries for the svg---------------------------- */
-
+/* -------------------------------------------------------------------------------------- */
 
 
+
+
+/* ---Media Queries for content------------------------------------ */
 @media screen and (max-width: 1000px) {
- svg {
-   width: 90vw;
-   margin-left: 3vw;
- }
+  .content {
+    font-size: 1.7vw;
+    margin-right: 3em;
+  }
 }
-
 
 @media screen and (max-width: 800px) {
-
+  .content {
+    font-size: 3vw;
+    margin-right: 3em;
+  }
 }
-
-/* ----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
 
 
 
