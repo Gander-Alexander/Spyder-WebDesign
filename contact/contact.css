@@ -89,12 +89,12 @@
 .nav-icons .fa-github {
   margin-right: 1em;
 }
-
-
-
-
 /* ----------------------------------------------------- */
-  
+@media screen and (max-width: 500px) {
+  .nav-icons .fa-github {
+    margin-right: .2em;
+  }
+}
   
 /* ------Media Queries for the nav bar------------- */
 
