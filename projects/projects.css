@@ -221,7 +221,6 @@ img {
 
 .text {
   color: white;
-  font-size: 1rem;
   width: 380px;
   margin-left: 2em;
   margin-top: 1.5em;
@@ -285,9 +284,9 @@ button:hover {
   width: 600px;
   margin-left: 9em;
 }
+
 .text {
-  width: 340px;
-  margin-left: 3em;
+  color: red;
 }
 }
 
