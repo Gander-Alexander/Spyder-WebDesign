@@ -135,45 +135,9 @@ margin-right: .5em;
 }
 }
 
-/* ------Media Queries for the nav bar------------- */
 
 
 
-
-/* --------Main Content------------------------ */
-.info {
-  font-size: 1.4em;
-  margin-top: 2em;
-  margin-left: 20vw;
-  margin-right: 20em;
-  line-height: 40px;
-}
-
-.icons {
-  margin-top: 1em;
-  font-size: 2.5em;
-}
-
-.icons .fa-github {
-  margin-right: 2em;
-}
-
-/* ---Media Queries for content------------------------------------ */
-@media screen and (max-width: 1000px) {
-.info {
-  font-size: 1.7vw;
-  margin-right: 2em;
-  margin-left: 4em;
-}
-}
-
-@media screen and (max-width: 800px) {
-.info {
-  font-size: 3vw;
-  margin-right: 3em;
-}
-}
-/* -----------------------------------------------------------------------
 
 
 /* ----------------------hero section------------------------------------------ */

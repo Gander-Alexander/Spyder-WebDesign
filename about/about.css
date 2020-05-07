@@ -222,6 +222,44 @@ p {
 /* -------------------------------------------------------------------------------------- */
 
 
+/* --------Funny hover shit--------------------------- */
+.fa-html5:hover {
+  color: rgb(235, 74, 25)
+}
+
+.fa-css3-alt:hover{
+  color: rgb(36, 149, 224);
+}
+
+.fa-js-square:hover{
+  color: yellow;
+}
+
+.fa-adobe:hover {
+  color: rgb(209, 20, 20);
+}
+
+.fa-vuejs:hover {
+  color: lightgreen;
+}
+
+.fa-sass:hover {
+  color: rgb(211, 67, 91);
+}
+
+.fa-node:hover {
+  color: rgb(89, 194, 89);
+}
+
+.fa-figma:hover {
+  color: rgb(184, 38, 184);
+}
+
+.fa-wordpress:hover {
+  color: rgb(95, 136, 199);
+}
+
+
 
 /* ---Media Queries for content------------------------------------ */
 @media screen and (max-width: 1000px) {
@@ -229,6 +267,9 @@ p {
     font-size: 1.7vw;
     margin-right: 2em;
     margin-left: 3em;
+  }
+  .fa-wordpress:hover, .fa-vuejs:hover, .fa-css3-alt:hover, .fa-js-square:hover, .fa-adobe:hover, .fa-sass:hover, .fa-html5:hover, .fa-node:hover, .fa-figma:hover {
+    color: black;
   }
 }
 
@@ -244,6 +285,7 @@ p {
   .profile {
     width: 13em;
   }
+  
 }
 /* ---------------------------------------------------------------------------------------- */
 
