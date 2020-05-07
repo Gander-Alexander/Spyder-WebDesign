@@ -221,17 +221,11 @@ img {
 
 .text {
   color: white;
-  font-size: .9em;
-  position: absolute;
-  top: 14%;
-  left: 80%;
+  font-size: 1rem;
   width: 380px;
-  margin-left: 1em;
+  margin-left: 2em;
   margin-top: 1.5em;
-  transform: translate(-90%, 30%);
-  -ms-transform: translate(-90%, 30%);
-  -webkit-transform: translate(-90%, 30%);
-  -o-transform: translate(-90%, 30%);
+ 
 }
 
 
