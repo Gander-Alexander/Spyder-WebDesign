@@ -285,10 +285,6 @@ button:hover {
   width: 600px;
   margin-left: 9em;
 }
-
-.text {
-  font-size: .5em;
-}
 }
 
 @media screen and (max-width: 760px) {
@@ -302,6 +298,10 @@ button:hover {
   .card {
     width: 600px;
     margin-left: 3em;
+  }
+
+  .text {
+    font-size: .5em;
   }
   }
 
