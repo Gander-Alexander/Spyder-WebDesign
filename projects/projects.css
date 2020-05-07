@@ -13,97 +13,171 @@ body {
 
 
 
-/* Nav Bar---------------------------------------------- */
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-}
-
-
-.logoimg {
-  margin-left: 20px;
-  width: 70px;
-  height: 70px;
-  transition-duration: 0.6s;
-}
-
-
-
-.logo {
-  color: rgb(37, 32, 32);
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  border-radius: 20px 0px 20px 20px;
-  padding: 1em .7em .6em 1em;
-  margin-top: .4em;
-  background-color: aliceblue;
-}
-
-
-
-.logo:hover {
-  color: chocolate;
-  background-color: antiquewhite;
-}
-
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.nav-links a {
-  color: rgb(49, 43, 43);
-  
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  padding: .5em;
-}
-
-.nav-links a:hover {
-  color: chocolate;
-  background-color: aliceblue;
-  border-top: 3px solid black;
-  border-left: 3px solid black;
-  border-radius: 20px 0px 20px 0px;
-}
-/* ----------------------------------------------------- */
-
-
-/* ------Media Queries for the nav bar------------- */
-
-@media screen and (max-width: 700px) {
-  nav a {
-    margin-left: 1.2em;
-    font-size: small;
-  }
-
-  .nav-links {
-    margin-right: 2em;
-  }
-
+  /* Nav Bar---------------------------------------------- */
   nav {
-    justify-content: start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
   }
-
+  
+  
+  .logoimg {
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    transition-duration: 0.6s;
+  }
+  
+  
+  
   .logo {
-    margin-right: 3em;
+    color: rgb(37, 32, 32);
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 20px 0px 20px 20px;
+    padding: 1em .7em .6em 1em;
+    margin-top: .4em;
+    background-color: aliceblue;
+  }
+  
+  
+  
+  .logo:hover {
+    color: chocolate;
+    background-color: antiquewhite;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .arrow {
+    margin-top: 1em;
+    width: 3em;
+  }
+  
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    color: rgb(49, 43, 43);
+    
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: .5em;
+  }
+  
+  .nav-links a:hover {
+    color: chocolate;
+    background-color: aliceblue;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 20px 0px 20px 0px;
+  }
+  
+  
+  /* --------Icons------------------------------------------- */
+  .nav-icons {
+  font-size: 2em;
+  }
+  
+  .nav-icons .fa-github {
+  margin-right: .5em;
   }
 
+  .fa-github {
+    color: black;
+  }
+  
+  .fa-linkedin {
+    color: black;
+  }
+  
+  .fa-github:hover {
+    color: grey;
+  }
+  
+  .fa-linkedin:hover {
+    color: rgb(41, 120, 151);
+  }
+  /* ----------------------------------------------------- */
+  @media screen and (max-width: 500px) {
+  .nav-icons .fa-github {
+    margin-right: .1em;
+  }
+  }
+  
+  /* ------Media Queries for the nav bar------------- */
+  
+
+
+
+/* --------Main Content------------------------ */
+.info {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-left: 20vw;
+  margin-right: 20em;
+  line-height: 40px;
 }
 
+.icons {
+  margin-top: 1em;
+  font-size: 2.5em;
+}
+
+.icons .fa-github {
+  margin-right: 2em;
+}
+
+/* ---Media Queries for content------------------------------------ */
+@media screen and (max-width: 1000px) {
+.info {
+  font-size: 1.7vw;
+  margin-right: 2em;
+  margin-left: 4em;
+}
+}
+
+@media screen and (max-width: 800px) {
+.info {
+  font-size: 3vw;
+  margin-right: 3em;
+}
+}
+/* -----------------------------------------------------------------------
 
  /* Main--------------------------------------------------- */
  .gallery {

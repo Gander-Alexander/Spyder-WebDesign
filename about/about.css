@@ -13,8 +13,8 @@ body {
 
 
 
-/* Nav Bar---------------------------------------------- */
-nav {
+ /* Nav Bar---------------------------------------------- */
+ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -52,7 +52,34 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  
+}
+
+img {
+  margin-top: 1em;
+  width: 3em;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .nav-links li {
@@ -79,32 +106,78 @@ a {
   border-left: 3px solid black;
   border-radius: 20px 0px 20px 0px;
 }
-/* ----------------------------------------------------- */
 
+
+/* --------Icons------------------------------------------- */
+.nav-icons {
+font-size: 2em;
+}
+
+.nav-icons .fa-github {
+margin-right: 1em;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-linkedin {
+  color: black;
+}
+
+.fa-github:hover {
+  color: grey;
+}
+
+.fa-linkedin:hover {
+  color: rgb(41, 120, 151);
+}
+/* ----------------------------------------------------- */
+@media screen and (max-width: 500px) {
+.nav-icons .fa-github {
+  margin-right: .1em;
+}
+}
 
 /* ------Media Queries for the nav bar------------- */
 
-@media screen and (max-width: 700px) {
-  nav a {
-    margin-left: 1.2em;
-    font-size: small;
-  }
 
-  .nav-links {
-    margin-right: 2em;
-  }
 
-  nav {
-    justify-content: start;
-  }
 
-  .logo {
-    margin-right: 3em;
-  }
-
+/* --------Main Content------------------------ */
+.info {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-left: 20vw;
+  margin-right: 20em;
+  line-height: 40px;
 }
-/* -------------------------------------------------------------------------------------- */
 
+.icons {
+  margin-top: 1em;
+  font-size: 2.5em;
+}
+
+.icons .fa-github {
+  margin-right: 2em;
+}
+
+/* ---Media Queries for content------------------------------------ */
+@media screen and (max-width: 1000px) {
+.info {
+  font-size: 1.7vw;
+  margin-right: 2em;
+  margin-left: 4em;
+}
+}
+
+@media screen and (max-width: 800px) {
+.info {
+  font-size: 3vw;
+  margin-right: 3em;
+}
+}
+/* -----------------------------------------------------------------------
 
 
 
