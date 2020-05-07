@@ -150,7 +150,7 @@ margin-right: 1em;
 
 .profile {
   width: 20em;
-  clip-path: circle();
+  border-radius: 40px;
   margin-bottom: 1em;
 }
 
@@ -234,13 +234,16 @@ p {
 
 @media screen and (max-width: 800px) {
   .info {
-    font-size: 3.5vw;
+    font-size: 3.6vw;
     margin-right: 2.5em;
   }
   .skills i {
     font-size: 5em;
   }
 
+  .profile {
+    width: 13em;
+  }
 }
 /* ---------------------------------------------------------------------------------------- */
 
