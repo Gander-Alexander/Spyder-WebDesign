@@ -100,11 +100,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: chocolate;
-  background-color: aliceblue;
-  border-top: 3px solid black;
-  border-left: 3px solid black;
-  border-radius: 20px 0px 20px 0px;
+  color: white;
 }
 
 
