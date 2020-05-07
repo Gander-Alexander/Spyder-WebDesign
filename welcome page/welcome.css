@@ -8,7 +8,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
-  background-color: rgb(228, 147, 147);
+  background-color: rgb(67, 82, 121);
 }
 
 
@@ -91,7 +91,7 @@ a {
 }
 
 .nav-links a {
-  color: rgb(49, 43, 43);
+  color: white;
   
   letter-spacing: 3px;
   font-weight: bold;
@@ -100,7 +100,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: white;
+  color: rgb(3, 216, 205);
 }
 
 
@@ -190,7 +190,7 @@ margin-right: .5em;
 
 .hero-image {
   margin-top: 2em;
-  background-color: rgb(31, 27, 5);   
+  background-color: rgb(18, 38, 56);   
   height: 60vh;
   width: 80vw;
   background-position: center;
@@ -218,7 +218,7 @@ margin-right: .5em;
 
 button {
   margin-top: 2em;
-  background-color: rgb(216, 124, 3);
+  background-color: rgb(3, 216, 205);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -235,7 +235,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: rgb(218, 153, 34);
+  background-color: rgb(17, 158, 151);
   border-radius: 40px;
 }
 

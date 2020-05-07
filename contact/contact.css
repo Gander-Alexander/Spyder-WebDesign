@@ -8,7 +8,7 @@
   html {
     overflow-x: hidden;
     font-family: 'Varela Round', sans-serif;
-    background-color: rgb(228, 147, 147);
+    background-color: rgb(67, 82, 121);
   }
   
   
@@ -92,7 +92,7 @@
   }
   
   .nav-links a {
-    color: rgb(49, 43, 43);
+    color: white;
     
     letter-spacing: 3px;
     font-weight: bold;
@@ -101,7 +101,7 @@
   }
   
   .nav-links a:hover {
-    color: white;
+    color: rgb(3, 216, 205);
   }
 
 
@@ -150,6 +150,7 @@
     margin-left: 20vw;
     margin-right: 20em;
     line-height: 40px;
+    color: rgb(247, 243, 243);
   }
 
   .icons {
