@@ -286,7 +286,9 @@ button:hover {
 }
 
 .text {
-  color: red;
+  width: 340px;
+  margin-left: .6em;
+  margin-top: .5em;
 }
 }
 
