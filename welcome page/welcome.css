@@ -103,6 +103,11 @@ a {
   color: rgb(3, 216, 205);
 }
 
+
+
+
+/* --------Media query for the nav to switch between desktop and mobile */
+
 @media screen and (min-width: 1000px) {
   .nav2 {
     display: none;

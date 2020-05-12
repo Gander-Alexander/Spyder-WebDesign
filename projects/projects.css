@@ -13,99 +13,112 @@ body {
 
 
 
-  /* Nav Bar---------------------------------------------- */
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-  }
-  
-  
-  .logoimg {
-    margin-left: 20px;
-    width: 70px;
-    height: 70px;
-    transition-duration: 0.6s;
-  }
-  
-  
-  
-  .logo {
-    color: rgb(37, 32, 32);
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
-    border-radius: 20px 0px 20px 20px;
-    padding: 1em .7em .6em 1em;
-    margin-top: .4em;
-    background-color: aliceblue;
-  }
-  
-  
-  
-  .logo:hover {
-    color: chocolate;
-    background-color: antiquewhite;
-  }
-  
-  
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  
-  .arrow {
-    margin-top: 1em;
-    width: 3em;
-    margin-right: 2em;
-  }
-  
-  .arrow:hover {
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    font-family: 'Varela Round', sans-serif;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    
-    width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .nav-links a {
-    color: white;
-    
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: .5em;
-  }
-  
-  .nav-links a:hover {
-    color: rgb(3, 216, 205);
-  }
+   /* Nav Bar---------------------------------------------- */
+ nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
 
+
+.logoimg {
+  margin-left: 20px;
+  width: 70px;
+  height: 70px;
+  transition-duration: 0.6s;
+}
+
+
+
+.logo {
+  color: rgb(37, 32, 32);
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 0px 20px 20px 20px;
+  padding: 1em .7em .6em 1em;
+  margin-top: .4em;
+  background-color: aliceblue;
+}
+
+
+
+.logo:hover {
+  color: chocolate;
+  background-color: antiquewhite;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
   
+}
+
+.hamb {
+  margin-top: 1em;
+  width: 3em;
+}
+
+.hamb:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 160px;
+  right: 2em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 15px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: white;
   
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: .5em;
+}
+
+.nav-links a:hover {
+  color: rgb(3, 216, 205);
+}
+
+
+
+
+/* --------Media query for the nav to switch between desktop and mobile */
+
+@media screen and (min-width: 1000px) {
+  .nav2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav1 {
+    display: none;
+  }
+}
   /* --------Icons------------------------------------------- */
   .nav-icons {
   font-size: 2em;
@@ -140,47 +153,11 @@ body {
 
   
 
-
-
-/* --------Main Content------------------------ */
-.info {
-  font-size: 1.4em;
-  margin-top: 2em;
-  margin-left: 20vw;
-  margin-right: 20em;
-  line-height: 40px;
-}
-
-.icons {
-  margin-top: 1em;
-  font-size: 2.5em;
-}
-
-.icons .fa-github {
-  margin-right: 2em;
-}
-
-/* ---Media Queries for content------------------------------------ */
-@media screen and (max-width: 1000px) {
-.info {
-  font-size: 1.7vw;
-  margin-right: 2em;
-  margin-left: 4em;
-}
-}
-
-@media screen and (max-width: 800px) {
-.info {
-  font-size: 3vw;
-  margin-right: 3em;
-}
-}
-/* -----------------------------------------------------------------------
-
- /* Main--------------------------------------------------- */
+ /* --------------Main----------------------------------------- */
  .gallery {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 img {
@@ -190,48 +167,25 @@ img {
 
 
 .card {
+  margin: 5em;
   display: flex;
-  margin-top: 10em;
-  margin-left: 10em;
-  margin-bottom: 3em;
-  width: 520px;
-  background-color: rgb(53, 91, 148);
-  box-shadow: 0px 0px 1px 1px;
+  flex-direction: column;
+  width: 560px;
   transition: .4s ease;
 }
 
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(185, 82, 75, 0.685);
-}
-
-.card:hover .overlay {
-  visibility: visible;
-  opacity: 1;
-}
-
 .text {
   color: white;
   width: 380px;
-  margin-left: 2em;
-  margin-top: 1.5em;
- 
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: 1.1em;
 }
 
 
 button {
-  margin-top: 1.2em;
-  margin-left: 2em;
+  margin: 1em;
   background-color: rgb(216, 124, 3);
   border: none;
   color: white;
@@ -256,69 +210,18 @@ button:hover {
 
 .card:hover {
   box-shadow: 5px 5px 20px;
-  transform: translateY(0em);
 }
 
-@media screen and (max-width: 1400px) {
-  .card {
-    width: 800px;
-    margin-left: 16.5em;
-  }
-  }
 
-  @media screen and (max-width: 1100px) {
-    .card {
-      width: 700px;
-      margin-left: 13em;
-    }
-    }
+/* ------Media query for the gallery------------------ */
 
-   @media screen and (max-width: 1000px) {
-    .card {
-      width: 700px;
-      margin-left: 9em;
-    }
-  }
 
-@media screen and (max-width: 900px) {
-.card {
-  width: 600px;
-  margin-left: 9em;
-}
 
-.text {
-  width: 340px;
-  margin-left: .6em;
-  margin-top: .5em;
-}
-}
 
-@media screen and (max-width: 760px) {
-.card {
-  width: 500px;
-  margin-left: 7em;
-}
-}
 
-@media screen and (max-width: 750px) {
-  .card {
-    width: 600px;
-    margin-left: 3em;
-  }
-  }
 
-@media screen and (max-width: 525px) {
-  .card {
-    width: 525px;
-    margin: 0;
-    margin-top: 4em;
-  }
-  .text {
-    font-size: 1em;
-    top: 17%;
-    left: 80%;
-  }
-}
+
+
 
 /* Footer-------------------------------------------- */
 

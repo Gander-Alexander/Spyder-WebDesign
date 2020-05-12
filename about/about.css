@@ -35,7 +35,7 @@ body {
   color: rgb(37, 32, 32);
   border-bottom: 3px solid black;
   border-right: 3px solid black;
-  border-radius: 20px 0px 20px 20px;
+  border-radius: 0px 20px 20px 20px;
   padding: 1em .7em .6em 1em;
   margin-top: .4em;
   background-color: aliceblue;
@@ -58,7 +58,6 @@ body {
 img {
   margin-top: 1em;
   width: 3em;
-  margin-right: 2em;
 }
 
 img:hover {
@@ -72,10 +71,10 @@ img:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  
   width: 160px;
+  right: 2em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 15px 16px;
   z-index: 1;
 }
 
@@ -102,6 +101,23 @@ a {
 
 .nav-links a:hover {
   color: rgb(3, 216, 205);
+}
+
+
+
+
+/* --------Media query for the nav to switch between desktop and mobile */
+
+@media screen and (min-width: 1000px) {
+  .nav2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav1 {
+    display: none;
+  }
 }
 
 
