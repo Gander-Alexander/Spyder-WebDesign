@@ -178,21 +178,19 @@ img {
 .text {
   color: white;
   width: 380px;
-  margin-top: 1em;
-  margin-left: 1em;
+  margin: 2em;
   font-size: 1.1em;
 }
 
 
 button {
-  margin: 1em;
+  width: 100%;
   background-color: rgb(216, 124, 3);
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 10px;
   transition: .3s ease;
@@ -207,19 +205,14 @@ button:hover {
 
 
 
-
-.card:hover {
-  box-shadow: 5px 5px 20px;
-}
-
-
 /* ------Media query for the gallery------------------ */
 
-@media screen and (max-width: 1000px) {
-  img {
-    width: 50%;
-    height: 50%;
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: .9em;
+    max-width: 300px;
   }
+ 
 }
 
 
