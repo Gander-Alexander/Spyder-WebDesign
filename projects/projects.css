@@ -215,6 +215,7 @@ button:hover {
   }
  
   img {
+    justify-content: center;
     width: 80%;
     height: 80%;
   }
