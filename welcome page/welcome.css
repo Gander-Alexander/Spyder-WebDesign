@@ -103,6 +103,18 @@ a {
   color: rgb(3, 216, 205);
 }
 
+@media screen and (min-width: 1000px) {
+  .nav2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav1 {
+    display: none;
+  }
+}
+
 
 /* --------Icons------------------------------------------- */
 .nav-icons {
