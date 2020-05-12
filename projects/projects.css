@@ -215,7 +215,12 @@ button:hover {
 
 /* ------Media query for the gallery------------------ */
 
-
+@media screen and (max-width: 1000px) {
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}
 
 
 
