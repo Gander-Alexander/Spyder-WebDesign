@@ -168,32 +168,36 @@ img {
 
 
 .card {
+  color: white;
   margin: 5em;
   display: flex;
   flex-direction: column;
-  width: 560px;
+  width: 570px;
   transition: .4s ease;
 }
 
 
 .text {
-  color: white;
   width: 380px;
   margin: 2em;
   font-size: 1.1em;
 }
 
 
+.card ul{
+  margin-bottom: 2em;
+}
+
+
 button {
   width: 100%;
   background-color: rgb(216, 124, 3);
-  border: none;
+  border: solid black 2px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 10px;
   transition: .3s ease;
 }
 
