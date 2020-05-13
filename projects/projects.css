@@ -218,11 +218,8 @@ button:hover {
     max-width: 300px;
   }
  
-  img {
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 60%;
-    height: 30%;
+  .card {
+    width: 300px;
   }
 }
 
