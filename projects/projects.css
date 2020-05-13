@@ -156,15 +156,12 @@ a {
  /* --------------Main----------------------------------------- */
  .gallery {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center; 
   margin-bottom: 5em;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
+
 
 
 .card {
@@ -172,7 +169,8 @@ img {
   margin: 5em;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 700px;
+  height: 700px;
   transition: .4s ease;
 }
 
@@ -184,7 +182,7 @@ img {
 }
 
 .card ul{
-  margin-left: 2em;
+  margin-left: 5em;
   margin-bottom: 2em;
 }
 
@@ -220,12 +218,10 @@ button:hover {
     font-size: .9em;
     max-width: 300px;
   }
- 
-  img {
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 80%;
-    height: 60%;
+
+  .card {
+    width: 400px;
+    height: 400px;
   }
 }
 
