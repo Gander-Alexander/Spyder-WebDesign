@@ -168,20 +168,27 @@ img {
 
 
 .card {
+  color: white;
   margin: 5em;
   display: flex;
   flex-direction: column;
-  width: 560px;
+  width: 100%;
   transition: .4s ease;
 }
 
 
 .text {
-  color: white;
   width: 380px;
   margin: 2em;
   font-size: 1.1em;
 }
+
+.card ul{
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+
 
 
 button {
