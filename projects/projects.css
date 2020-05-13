@@ -170,7 +170,7 @@ a {
 }
 
 .content {
-  background-color: rgba(240, 248, 255, 0.197);
+  background-color: rgba(240, 248, 255, 0.537);
   padding: 1.4em;
 }
 
@@ -201,7 +201,7 @@ a {
 
 
 button {
-  background-color: rgb(216, 124, 3);
+  background-color: rgb(3, 117, 216);
   border: solid black 2px;
   color: white;
   padding: 15px 10px;
@@ -213,8 +213,8 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: rgb(196, 178, 23);
-  color: rgb(78, 60, 60);
+  background-color: rgb(23, 130, 196);
+  color: rgb(5, 5, 5);
 }
 
 
