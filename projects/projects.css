@@ -158,13 +158,13 @@ a {
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
-  margin-bottom: 10em;
+  margin-bottom: 14em;
 }
 
 .card1, .card2, .card3, .card4 {
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5em;
+  margin: 7em;
   width: 570px;
   height: 300px;
 }
@@ -221,6 +221,7 @@ button:hover {
 @media screen and (max-width: 800px) {
   .content {
     margin: 0;
+    font-size: .8em;
   }
 
   .text, ul {
