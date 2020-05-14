@@ -160,34 +160,24 @@ a {
 
   /* --------Main Content------------------------ */
   .info {
+    display: flex;
+    flex-direction: column;
     font-size: 1.4em;
-    margin: 7em 20vw 0em 20em;
+    margin-top: 2em;
+    margin-left: 2em;
     line-height: 40px;
     color: rgb(247, 243, 243);
   }
 
   .icons {
+    top: 5em;
     margin-top: 1em;
     font-size: 2.5em;
   }
 
-  .icons .fa-github {
-    margin-right: 2em;
+  .fa-linkedin {
+    position: absolute;
+    left: 3.6em;
   }
 
-  /* ---Media Queries for content------------------------------------ */
-@media screen and (max-width: 1000px) {
-  .info {
-    font-size: 1.7vw;
-    margin-right: 2em;
-    margin-left: 4em;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .info {
-    font-size: 5vw;
-    margin-right: 3em;
-  }
-}
 /* -----------------------------------------------------------------------
