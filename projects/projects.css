@@ -155,22 +155,24 @@ a {
 
  /* --------------Main----------------------------------------- */
  .gallery {
+   margin-top: 3em;
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
   margin-bottom: 6em;
+  color: white;
 }
 
 .card1, .card2, .card3, .card4 {
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 2em;
+  margin: 2.5em;
   width: 900px;
   height: 500px;
 }
 
 .content {
-  background-color: rgba(240, 248, 255, 0.537);
+  background-color: rgba(74, 74, 74, 0.714);
   padding: 1.4em;
 }
 
