@@ -164,7 +164,7 @@ a {
     flex-direction: column;
     font-size: 1.4em;
     margin-top: 2em;
-    margin-left: 2em;
+    margin-left: 10em;
     line-height: 40px;
     color: rgb(247, 243, 243);
   }
@@ -175,9 +175,19 @@ a {
     font-size: 2.5em;
   }
 
-  .fa-linkedin {
+  .info .fa-linkedin {
     position: absolute;
-    left: 3.6em;
+    left: 6.7em;
+  }
+
+  @media screen and (max-width: 800px) {
+    .info {
+      margin-left: 5em;
+    }
+
+    .info .fa-linkedin {
+      left: 4.8em;
+    }
   }
 
 /* -----------------------------------------------------------------------
