@@ -161,9 +161,7 @@ a {
   /* --------Main Content------------------------ */
   .info {
     font-size: 1.4em;
-    margin-top: 2em;
-    margin-left: 20vw;
-    margin-right: 20em;
+    margin: 4em 20vw 0em 20em;
     line-height: 40px;
     color: rgb(247, 243, 243);
   }
