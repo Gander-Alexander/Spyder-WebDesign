@@ -183,7 +183,7 @@ a {
   @media screen and (max-width: 800px) {
     .info {
       margin-left: 3em;
-      font-size: 1.9em;
+      font-size: 1.1em;
     }
 
     .info .fa-linkedin {
