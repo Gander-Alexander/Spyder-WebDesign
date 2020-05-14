@@ -222,6 +222,10 @@ button:hover {
   .content {
     margin: 0;
   }
+
+  .text, ul {
+    margin: 1em;
+  }
 }
 
 /* Footer-------------------------------------------- */
