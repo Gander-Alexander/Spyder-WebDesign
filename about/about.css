@@ -284,6 +284,7 @@ p {
 
 /* --------Button Code------------- */
 button {
+  width: 100vw;
   margin: 6em 0em 6em 0em;
   background-color: rgb(3, 216, 205);
   border: none;
