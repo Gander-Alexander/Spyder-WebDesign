@@ -181,7 +181,8 @@ margin-right: 1em;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 7em;
+  margin-bottom: 1em;
+  font-size: 10em;
 }
 
 
