@@ -314,7 +314,7 @@ button:hover {
     margin-right: 2em;
     margin-left: 3em;
   }
-  .fa-wordpress:hover, .fa-vuejs:hover, .fa-css3-alt:hover, .fa-js-square:hover, .fa-adobe:hover, .fa-sass:hover, .fa-html5:hover, .fa-node:hover, .fa-figma:hover {
+  .fa-css3-alt:hover, .fa-adobe:hover, .fa-html5:hover, .fa-figma:hover {
     color: black;
   }
 }
