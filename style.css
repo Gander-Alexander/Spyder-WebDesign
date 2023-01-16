@@ -4,6 +4,7 @@
 
 
 .header {
+    margin-top: 200px;
     color: aquamarine;
-    align-self: center;
+    text-align: center;
 }
