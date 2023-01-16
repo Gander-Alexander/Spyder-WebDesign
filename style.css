@@ -1,4 +1,9 @@
+* {
+    background-color: black;
+}
+
+
 .header {
     color: aquamarine;
-    align-items: center;
+    align-self: center;
 }
